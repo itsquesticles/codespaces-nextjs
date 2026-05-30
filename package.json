@@ -6,8 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.5.16",
-    "@fontsource/jetbrains-mono": "^4.5.16",
+    "@fontsource/inter": "^4.5.0",
+    "@fontsource/jetbrains-mono": "^4.5.0",
     "lucide-react": "^0.497.0",
     "next": "^16.2.3",
     "react": "^18.2.0",
