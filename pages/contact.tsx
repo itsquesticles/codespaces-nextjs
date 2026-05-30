@@ -3,24 +3,24 @@ import Button from '../components/Button'
 
 export default function Contact() {
   return (
-    <main className="relative overflow-hidden bg-surface-1">
+    <main className="relative overflow-hidden bg-surface-1 pt-28">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center">
         <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
           <header className="text-center space-y-6">
             <p className="text-xs uppercase tracking-[0.6em] text-white/30">Contact</p>
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-display font-semibold leading-[0.95] tracking-tight text-white">
-              Get in Touch
+              Start the conversation
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-white/50 leading-relaxed">
-              For partnerships, collaborations, or press inquiries.
+              Partnerships, media, and strategic collaboration requests.
             </p>
           </header>
         </div>
       </section>
 
       {/* Contact Form */}
-      <SectionWrapper id="contact-form" eyebrow="Inquiries" heading="Send a message.">
+      <SectionWrapper id="contact-form" eyebrow="Contact" heading="Share your brief.">
         <div className="max-w-2xl">
           <form className="space-y-8">
             <div className="grid gap-6 sm:grid-cols-2">
@@ -78,13 +78,13 @@ export default function Contact() {
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               For direct access to Mike's experience and insights.
             </p>
-            <a href="#pricing" className="text-clay text-sm hover:underline">
+            <a href="/access" className="text-clay text-sm hover:underline">
               View membership options →
             </a>
           </div>
           
           <div className="rounded-[2rem] border border-white/12 bg-surface-4 p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">Press Inquiries</h3>
+            <h3 className="text-lg font-semibold text-white mb-2">Media Requests</h3>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               For media requests, interviews, and press materials.
             </p>
@@ -92,7 +92,7 @@ export default function Contact() {
           </div>
           
           <div className="rounded-[2rem] border border-white/12 bg-surface-4 p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">Business Inquiries</h3>
+            <h3 className="text-lg font-semibold text-white mb-2">Partnership Requests</h3>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               For partnerships, collaborations, and strategic opportunities.
             </p>

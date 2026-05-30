@@ -1,15 +1,15 @@
 import Button from '../components/Button'
 import MediaCard from '../components/MediaCard'
-import PricingCard from '../components/PricingCard'
 import SectionWrapper from '../components/SectionWrapper'
 import StatCard from '../components/StatCard'
 import TestimonialCard from '../components/TestimonialCard'
-import TimelineCard from '../components/TimelineCard'
 
 const stats = [
-  { value: '3x', label: 'X Games gold', note: 'A career built on decisive performance and reinvention.' },
-  { value: '25+', label: 'Years shaping FMX', note: 'From early street shows to global broadcast events.' },
-  { value: '80M+', label: 'Audience impressions', note: 'Legacy stories and projects seen by a wide modern audience.' }
+  { value: '3x', label: 'X Games medals', note: 'Medal years that shifted what riders believed was possible.' },
+  { value: '1st', label: 'Backflip attempts', note: 'Prototype-era progression before there was a blueprint.' },
+  { value: '30+', label: 'Years innovating', note: 'From performance to product, media, and modern creative work.' },
+  { value: '40+', label: 'Global appearances', note: 'Stadiums, tours, and campaigns across international markets.' },
+  { value: '80M+', label: 'Fans reached', note: 'Audience reach built through performance and long-tail storytelling.' }
 ]
 
 const timeline = [
@@ -105,8 +105,8 @@ export default function Home() {
               Artist. Builder. Mentor.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-10 animate-slide-up" style={{ animationDelay: '0.55s' }}>
-              <Button variant="primary" size="lg">Access Mike</Button>
-              <Button variant="outline" size="lg">Explore Legacy</Button>
+              <Button href="/access" variant="primary" size="lg">Access Mike</Button>
+              <Button href="/legacy" variant="outline" size="lg">Explore Legacy</Button>
             </div>
           </header>
         </div>
@@ -120,7 +120,7 @@ export default function Home() {
       </section>
 
       <SectionWrapper id="impact" eyebrow="Impact" heading="A legacy built on few, visible moments.">
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {stats.map((stat) => (
             <StatCard key={stat.label} value={stat.value} label={stat.label} note={stat.note} />
           ))}
@@ -219,7 +219,7 @@ export default function Home() {
                 Private content access
               </li>
             </ul>
-            <Button variant="secondary" size="md" className="w-full">Join Community</Button>
+            <Button href="/access" variant="secondary" size="md" className="w-full">Apply for Community</Button>
           </div>
 
           {/* Direct Access */}
@@ -253,7 +253,7 @@ export default function Home() {
                 Priority input from Mike
               </li>
             </ul>
-            <Button variant="primary" size="md" className="w-full">Get Direct Access</Button>
+            <Button href="/access" variant="primary" size="md" className="w-full">Get Direct Access</Button>
           </div>
 
           {/* 1-on-1 Advisory */}
@@ -280,7 +280,7 @@ export default function Home() {
                 Action plan included
               </li>
             </ul>
-            <Button variant="secondary" size="md" className="w-full">Book Session</Button>
+            <Button href="/access" variant="secondary" size="md" className="w-full">Request Advisory Session</Button>
           </div>
 
           {/* Strategic Partnerships */}
@@ -307,7 +307,7 @@ export default function Home() {
                 Collaborations
               </li>
             </ul>
-            <Button variant="outline" size="md" className="w-full">Inquire</Button>
+            <Button href="/contact" variant="outline" size="md" className="w-full">Start Partnership Conversation</Button>
           </div>
         </div>
 
@@ -349,12 +349,12 @@ export default function Home() {
           <div className="surface-panel rounded-[3rem] border border-white/12 p-8 sm:p-10">
             <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
-                <p className="text-xs uppercase tracking-[0.35em] text-white/50">Final call</p>
+                <p className="text-xs uppercase tracking-[0.35em] text-white/50">Final CTA</p>
                 <h2 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl">
-                  See the archive, the process, and the point of view.
+                  Thirty years of experience. One conversation away.
                 </h2>
               </div>
-              <Button className="max-w-max">Join Office Hours</Button>
+              <Button href="/access" className="max-w-max">Access Mike</Button>
             </div>
           </div>
         </div>
@@ -364,9 +364,9 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 sm:px-8 lg:px-10 lg:flex-row lg:items-center lg:justify-between">
           <p className="text-sm text-white/60">Mike Metzger — legacy archive, creative direction, and premium access.</p>
           <div className="flex flex-wrap gap-4 text-sm text-white/50">
-            <a href="#legacy" className="transition hover:text-white">Legacy</a>
-            <a href="#art" className="transition hover:text-white">Work</a>
-            <a href="#pricing" className="transition hover:text-white">Access</a>
+            <a href="/legacy" className="transition hover:text-white">Legacy</a>
+            <a href="/archive" className="transition hover:text-white">Archive</a>
+            <a href="/access" className="transition hover:text-white">Access</a>
           </div>
         </div>
       </footer>
