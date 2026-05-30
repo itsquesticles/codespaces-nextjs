@@ -76,36 +76,52 @@ const testimonials = [
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
-      <div className="relative isolate overflow-hidden px-6 pt-16 sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-6xl">
-          <header className="flex flex-col gap-10 pb-16 pt-10 sm:pb-20 lg:pt-16">
-            <div className="space-y-6">
-              <p className="text-xs uppercase tracking-[0.35em] text-white/50">Office Hours with Mike Metzger</p>
-              <h1 className="max-w-4xl text-4xl font-display font-semibold leading-tight text-white sm:text-6xl animate-fade">
-                Access the mind behind FMX’s defining chapters.
-              </h1>
-              <p className="max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
-                A curated archive of legacy, current work, and direct membership into Mike’s creative and strategic thinking.
-              </p>
+      {/* Cinematic Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-surface via-surface/95 to-surface" />
+        {/* Subtle animated background pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(110,131,212,0.1),transparent_50%)] animate-pulse-slow" />
+        </div>
+        {/* Hero content */}
+        <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+          <header className="flex flex-col items-center text-center space-y-8 pt-20 pb-32">
+            <p className="text-xs uppercase tracking-[0.5em] text-white/40 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+              Freestyle Motocross Pioneer
+            </p>
+            <h1 className="max-w-5xl text-5xl sm:text-7xl lg:text-8xl xl:text-9xl font-display font-semibold leading-[1.05] tracking-tight text-white animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              Mike Metzger
+            </h1>
+            <p className="max-w-3xl text-lg sm:text-xl lg:text-2xl text-white/60 leading-relaxed tracking-wide animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              He helped build an entire sport.
+            </p>
+            <p className="max-w-2xl text-base sm:text-lg text-white/40 leading-relaxed animate-slide-up" style={{ animationDelay: '0.4s' }}>
+              Artist. Builder. Mentor.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 pt-8 animate-slide-up" style={{ animationDelay: '0.5s' }}>
+              <Button variant="primary" size="lg">Access Mike</Button>
+              <Button variant="outline" size="lg">Explore Legacy</Button>
             </div>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Button className="max-w-max">Join Office Hours</Button>
-              <a
-                href="#legacy"
-                className="inline-flex items-center justify-center rounded-full border border-white/12 bg-surfaceMuted px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#20213a]"
-              >
-                Explore the archive
-              </a>
-            </div>
-            <div className="surface-panel rounded-[3rem] border border-white/12 p-8 sm:p-10">
-              <p className="text-sm uppercase tracking-[0.35em] text-white/50">Featured access</p>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-white/70">
-                Members receive monthly sessions, archive releases, select project insights, and a continuous pulse on what shapes the next chapter.
-              </p>
+            <div className="mt-20 relative aspect-[16/9] max-w-6xl w-full rounded-[2rem] border border-white/10 bg-surfaceMuted/50 overflow-hidden animate-scale-in" style={{ animationDelay: '0.6s' }}>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center space-y-4">
+                  <div className="w-20 h-20 rounded-full border-2 border-white/20 flex items-center justify-center mx-auto">
+                    <div className="w-0 h-0 border-l-[12px] border-l-transparent border-t-[20px] border-t-white border-r-[12px] border-r-transparent ml-1" />
+                  </div>
+                  <p className="text-sm text-white/30 uppercase tracking-[0.3em]">Cinematic Archive</p>
+                </div>
+              </div>
             </div>
           </header>
         </div>
-      </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center pt-2">
+            <div className="w-1 h-2 bg-white/40 rounded-full animate-pulse" />
+          </div>
+        </div>
+      </section>
 
       <SectionWrapper id="impact" eyebrow="Impact" heading="A legacy built on few, visible moments.">
         <div className="grid gap-6 sm:grid-cols-3">

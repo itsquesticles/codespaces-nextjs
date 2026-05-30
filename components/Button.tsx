@@ -1,25 +1,37 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'ghost'
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'text'
+  size?: 'sm' | 'md' | 'lg'
   children: ReactNode
 }
 
 export default function Button({
   variant = 'primary',
+  size = 'md',
   className = '',
   children,
   ...props
 }: ButtonProps) {
   const base =
-    'inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold tracking-[0.02em] transition duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/20 focus-visible:ring-offset-slate-950'
-  const palette =
-    variant === 'ghost'
-      ? 'border border-white/12 bg-surfaceMuted text-white hover:bg-[#20213a]'
-      : 'border border-clay bg-clay text-white hover:bg-[#5d71bc]'
+    'inline-flex items-center justify-center font-semibold tracking-[0.02em] transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/20 focus-visible:ring-offset-slate-950'
+  
+  const sizes = {
+    sm: 'px-5 py-2.5 text-xs rounded-full',
+    md: 'px-7 py-3 text-sm rounded-full',
+    lg: 'px-9 py-4 text-base rounded-full'
+  }
+  
+  const variants = {
+    primary: 'border border-clay bg-clay text-white hover:bg-[#5d71bc] hover:shadow-glow',
+    secondary: 'border border-white/12 bg-surfaceMuted text-white hover:bg-[#20213a] hover:border-white/20',
+    outline: 'border border-white/20 bg-transparent text-white hover:bg-white/5 hover:border-white/30',
+    ghost: 'border border-transparent bg-transparent text-white hover:bg-white/5',
+    text: 'border border-transparent bg-transparent text-clay hover:bg-clay/10'
+  }
 
   return (
-    <button className={`${base} ${palette} ${className}`.trim()} type="button" {...props}>
+    <button className={`${base} ${sizes[size]} ${variants[variant]} ${className}`.trim()} type="button" {...props}>
       {children}
     </button>
   )
