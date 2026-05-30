@@ -10,7 +10,7 @@ interface PricingCardProps {
 
 export default function PricingCard({ title, price, description, features }: PricingCardProps) {
   return (
-    <Card variant="elevated" className="shadow-glow">
+    <Card variant="elevated" className="">
       <div className="flex flex-col gap-3">
         <p className="text-sm uppercase tracking-[0.35em] text-white/50">{title}</p>
         <p className="text-5xl font-semibold tracking-tight text-white">{price}</p>

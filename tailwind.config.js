@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        surface: '#0F0F0F',
-        surfaceMuted: '#141414',
-        clay: '#D72638',
-        ink: '#F8F8F8',
-        inkSoft: '#D7D7D7'
+        surface: '#11121B',
+        surfaceMuted: '#18192A',
+        clay: '#6E83D4',
+        ink: '#C8D0F0',
+        inkSoft: '#A2A9C4'
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
@@ -29,8 +29,7 @@ module.exports = {
         '3xl': '3rem'
       },
       boxShadow: {
-        glow: '0 30px 80px rgba(0, 0, 0, 0.38)',
-        soft: '0 20px 50px rgba(0, 0, 0, 0.22)'
+        none: 'none'
       },
       letterSpacing: {
         tightest: '-0.04em'

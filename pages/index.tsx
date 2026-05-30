@@ -92,12 +92,12 @@ export default function Home() {
               <Button className="max-w-max">Join Office Hours</Button>
               <a
                 href="#legacy"
-                className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-full border border-white/12 bg-surfaceMuted px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#20213a]"
               >
                 Explore the archive
               </a>
             </div>
-            <div className="rounded-[3rem] border border-white/10 bg-white/5 p-8 shadow-glow sm:p-10">
+            <div className="surface-panel rounded-[3rem] border border-white/12 p-8 sm:p-10">
               <p className="text-sm uppercase tracking-[0.35em] text-white/50">Featured access</p>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-white/70">
                 Members receive monthly sessions, archive releases, select project insights, and a continuous pulse on what shapes the next chapter.
@@ -165,7 +165,7 @@ export default function Home() {
 
       <section className="border-t border-white/10 py-20 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10">
-          <div className="rounded-[3rem] border border-white/10 bg-white/5 p-10 sm:p-14">
+          <div className="surface-panel rounded-[3rem] border border-white/12 p-8 sm:p-10">
             <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
                 <p className="text-xs uppercase tracking-[0.35em] text-white/50">Final call</p>
