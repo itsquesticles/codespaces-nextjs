@@ -57,6 +57,16 @@
 - White/70: 70% opacity
 - White/60: 60% opacity
 
+### Color Scheme Hierarchy
+Dark background palette with subtle gradations for flat, opaque layering:
+- `surface-1`: #16161E - Deepest background
+- `surface-2`: #171820 - Deep background
+- `surface-3`: #191A23 - Dark background
+- `surface-4`: #1A1B26 - Primary background
+- `surface-5`: #1E1E2A - Elevated background
+- `surface-6`: #1E202E - Secondary elevated background
+- `surface-7`: #202330 - Lightest elevated background
+
 ## Border Radius System
 
 - `xl`: 1.5rem (24px) - Medium cards

@@ -82,47 +82,38 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden">
       {/* Cinematic Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-surface via-surface/95 to-surface" />
-        {/* Subtle animated background pattern */}
-        <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(110,131,212,0.1),transparent_50%)] animate-pulse-slow" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-surface-1">
+        {/* Cinematic video placeholder background */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-t from-surface-1 via-surface-1/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-surface-1/60 via-surface-1/40 to-surface-1" />
         </div>
+        
         {/* Hero content */}
         <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-          <header className="flex flex-col items-center text-center space-y-8 pt-20 pb-32">
-            <p className="text-xs uppercase tracking-[0.5em] text-white/40 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <header className="flex flex-col items-center text-center space-y-6 pt-32 pb-40">
+            <p className="text-xs uppercase tracking-[0.6em] text-white/30 animate-slide-up" style={{ animationDelay: '0.15s' }}>
               Freestyle Motocross Pioneer
             </p>
-            <h1 className="max-w-5xl text-5xl sm:text-7xl lg:text-8xl xl:text-9xl font-display font-semibold leading-[1.05] tracking-tight text-white animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="max-w-6xl text-6xl sm:text-8xl lg:text-9xl xl:text-[10rem] font-display font-semibold leading-[0.95] tracking-tight text-white animate-slide-up" style={{ animationDelay: '0.25s' }}>
               Mike Metzger
             </h1>
-            <p className="max-w-3xl text-lg sm:text-xl lg:text-2xl text-white/60 leading-relaxed tracking-wide animate-slide-up" style={{ animationDelay: '0.3s' }}>
+            <p className="max-w-4xl text-xl sm:text-2xl lg:text-3xl text-white/50 leading-relaxed tracking-wide animate-slide-up font-light" style={{ animationDelay: '0.35s' }}>
               He helped build an entire sport.
             </p>
-            <p className="max-w-2xl text-base sm:text-lg text-white/40 leading-relaxed animate-slide-up" style={{ animationDelay: '0.4s' }}>
+            <p className="max-w-2xl text-base sm:text-lg text-white/30 leading-relaxed animate-slide-up" style={{ animationDelay: '0.45s' }}>
               Artist. Builder. Mentor.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-8 animate-slide-up" style={{ animationDelay: '0.5s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 pt-10 animate-slide-up" style={{ animationDelay: '0.55s' }}>
               <Button variant="primary" size="lg">Access Mike</Button>
               <Button variant="outline" size="lg">Explore Legacy</Button>
             </div>
-            <div className="mt-20 relative aspect-[16/9] max-w-6xl w-full rounded-[2rem] border border-white/10 bg-surfaceMuted/50 overflow-hidden animate-scale-in" style={{ animationDelay: '0.6s' }}>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 rounded-full border-2 border-white/20 flex items-center justify-center mx-auto">
-                    <div className="w-0 h-0 border-l-[12px] border-l-transparent border-t-[20px] border-t-white border-r-[12px] border-r-transparent ml-1" />
-                  </div>
-                  <p className="text-sm text-white/30 uppercase tracking-[0.3em]">Cinematic Archive</p>
-                </div>
-              </div>
-            </div>
           </header>
         </div>
+        
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center pt-2">
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-float">
+          <div className="w-6 h-10 rounded-full border border-white/20 flex items-start justify-center pt-2">
             <div className="w-1 h-2 bg-white/40 rounded-full animate-pulse" />
           </div>
         </div>
@@ -205,7 +196,7 @@ export default function Home() {
         
         <div className="grid gap-8 lg:grid-cols-2 xl:grid-cols-4">
           {/* Community Access */}
-          <div className="rounded-[2rem] border border-white/12 bg-surfaceMuted p-8 transition-all duration-300 hover:border-white/20 hover:shadow-medium">
+          <div className="rounded-[2rem] border border-white/12 bg-surface-4 p-8 transition-all duration-300 hover:border-white/20 hover:shadow-medium">
             <div className="mb-6">
               <h3 className="text-xl font-semibold text-white mb-2">Community Access</h3>
               <p className="text-3xl font-display font-semibold text-white">$29<span className="text-lg text-white/60">/mo</span></p>
@@ -232,7 +223,7 @@ export default function Home() {
           </div>
 
           {/* Direct Access */}
-          <div className="rounded-[2rem] border-2 border-clay bg-surfaceMuted p-8 transition-all duration-300 hover:shadow-glow relative">
+          <div className="rounded-[2rem] border-2 border-clay bg-surface-4 p-8 transition-all duration-300 hover:shadow-glow relative">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <span className="px-4 py-1 bg-clay text-white text-xs font-semibold rounded-full uppercase tracking-wider">Most Popular</span>
             </div>
@@ -266,7 +257,7 @@ export default function Home() {
           </div>
 
           {/* 1-on-1 Advisory */}
-          <div className="rounded-[2rem] border border-white/12 bg-surfaceMuted p-8 transition-all duration-300 hover:border-white/20 hover:shadow-medium">
+          <div className="rounded-[2rem] border border-white/12 bg-surface-4 p-8 transition-all duration-300 hover:border-white/20 hover:shadow-medium">
             <div className="mb-6">
               <h3 className="text-xl font-semibold text-white mb-2">1-on-1 Advisory</h3>
               <p className="text-3xl font-display font-semibold text-white">$499<span className="text-lg text-white/60">/session</span></p>
@@ -293,7 +284,7 @@ export default function Home() {
           </div>
 
           {/* Strategic Partnerships */}
-          <div className="rounded-[2rem] border border-white/12 bg-surfaceMuted p-8 transition-all duration-300 hover:border-white/20 hover:shadow-medium">
+          <div className="rounded-[2rem] border border-white/12 bg-surface-4 p-8 transition-all duration-300 hover:border-white/20 hover:shadow-medium">
             <div className="mb-6">
               <h3 className="text-xl font-semibold text-white mb-2">Strategic Partnerships</h3>
               <p className="text-3xl font-display font-semibold text-white">Custom</p>
@@ -317,6 +308,25 @@ export default function Home() {
               </li>
             </ul>
             <Button variant="outline" size="md" className="w-full">Inquire</Button>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-20 max-w-3xl">
+          <h3 className="text-2xl font-semibold text-white mb-8">Frequently Asked Questions</h3>
+          <div className="space-y-6">
+            <div className="border-b border-white/10 pb-6">
+              <h4 className="text-lg font-medium text-white mb-2">What makes this different from coaching?</h4>
+              <p className="text-white/60 text-sm leading-relaxed">This is not coaching. This is direct access to decades of experience across professional sports, brand building, sponsorships, and entrepreneurship. You're getting strategic input, not generic advice.</p>
+            </div>
+            <div className="border-b border-white/10 pb-6">
+              <h4 className="text-lg font-medium text-white mb-2">Who is this for?</h4>
+              <p className="text-white/60 text-sm leading-relaxed">Athletes, founders, creators, and brands who want strategic input from someone who has built careers, negotiated deals, and created at the highest level.</p>
+            </div>
+            <div className="border-b border-white/10 pb-6">
+              <h4 className="text-lg font-medium text-white mb-2">How quickly do I get responses?</h4>
+              <p className="text-white/60 text-sm leading-relaxed">Direct Access members typically receive responses within 48 hours. 1-on-1 sessions are scheduled within 7 days of booking.</p>
+            </div>
           </div>
         </div>
       </SectionWrapper>

@@ -6,8 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        surface: '#11121B',
-        surfaceMuted: '#18192A',
+        'surface-1': '#16161E',
+        'surface-2': '#171820',
+        'surface-3': '#191A23',
+        'surface-4': '#1A1B26',
+        'surface-5': '#1E1E2A',
+        'surface-6': '#1E202E',
+        'surface-7': '#202330',
         clay: '#6E83D4',
         ink: '#C8D0F0',
         inkSoft: '#A2A9C4'

@@ -8,8 +8,8 @@ interface CardProps {
 }
 
 const variants = {
-  soft: 'rounded-[2rem] border border-white/12 bg-surfaceMuted transition duration-200 ease-out',
-  elevated: 'rounded-[2rem] border border-white/12 bg-surfaceMuted shadow-medium transition duration-200 ease-out hover:shadow-strong',
+  soft: 'rounded-[2rem] border border-white/12 bg-surface-4 transition duration-200 ease-out',
+  elevated: 'rounded-[2rem] border border-white/12 bg-surface-4 shadow-medium transition duration-200 ease-out hover:shadow-strong',
   minimal: 'rounded-[2rem] border border-transparent bg-transparent transition duration-200 ease-out',
   bordered: 'rounded-[2rem] border border-white/20 bg-transparent transition duration-200 ease-out hover:border-white/30'
 }
